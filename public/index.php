@@ -9,7 +9,7 @@ switch($action) {
         $controller->getAll();
         break;
 
-    case 'visite':
+    case 'detail':
         if (!isset($_GET['id'])) {
             header('Content-Type: application/json; charset=utf-8');
             echo json_encode(['error' => 'ID manquant']);
